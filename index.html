@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>MyWebsite</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+    <div class="nav-left">
+        <img src="https://dummyimage.com/50x50/ff0/000.png&text=REVO" alt="Logo">
+    </div>
+    <div class="nav-right">
+        <div class="nav-box">
+        <a href="#">Home</a>
+        <a href="#">My Profile</a>
+        <a href="#">Portofolio</a>
+        <a href="#">Message Us</a>
+        </div>
+    </div>
+    </nav>
+
+
+
+  <!-- Container -->
+  <div class="container">
+    <!-- Form -->
+    <div class="form-section">
+      <h2>Form Belajar</h2>
+      <p>Ini adalah website latihan pertama</p>
+
+      <form id="belajarForm">
+        <div class="form-group">
+          <label>Nama :</label>
+          <input type="text" id="nama" placeholder="Nama" required>
+        </div>
+
+        <div class="form-group">
+          <label>Tanggal Lahir :</label>
+          <input type="date" id="tgl" required>
+        </div>
+
+        <div class="form-group">
+          <label>Jenis Kelamin :</label>
+          <div class="radio-group">
+            <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+            <input type="radio" name="gender" value="Perempuan"> Perempuan
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pesan :</label>
+          <textarea id="pesan" placeholder="Pesan" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Tabel -->
+    <div class="table-section">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Tanggal Lahir</th>
+            <th>Jenis Kelamin</th>
+            <th>Pesan</th>
+            <th>Profile</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ada Lovelace</td>
+            <td>December 10, 1815</td>
+            <td>Perempuan</td>
+            <td>Belajar Buat Website</td>
+            <td><a href="#">Klik Disini</a></td>
+            <td class="delete-btn">🗑️</td>
+          </tr>
+          <tr>
+            <td>Grace Hopper</td>
+            <td>December 9, 1906</td>
+            <td>Perempuan</td>
+            <td>Hello World</td>
+            <td><a href="#">Klik Disini</a></td>
+            <td class="delete-btn">🗑️</td>
+          </tr>
+          <tr>
+            <td>Margaret Hamilton</td>
+            <td>August 17, 1936</td>
+            <td>Perempuan</td>
+            <td>Test Dulu</td>
+            <td><a href="#">Klik Disini</a></td>
+            <td class="delete-btn">🗑️</td>
+          </tr>
+          <tr>
+            <td>Joan Clarke</td>
+            <td>June 24, 1917</td>
+            <td>Laki-Laki</td>
+            <td>Selalu Semangat</td>
+            <td><a href="#">Klik Disini</a></td>
+            <td class="delete-btn">🗑️</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Created By RevoU
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
